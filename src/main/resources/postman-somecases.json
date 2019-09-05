@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "dbe42263-1723-48d0-926a-36d3517f8cc7",
+    "name": "cloud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "feignclient",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:9004/feign/getPort"
+      },
+      "response": []
+    },
+    {
+      "name": "feignclient Copy",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:9004/feign/getPort"
+      },
+      "response": []
+    },
+    {
+      "name": "ace-test",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:18666/feign/getPort"
+      },
+      "response": []
+    },
+    {
+      "name": "gatewayserver",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:18999/api/goProvider/provider/p1"
+      },
+      "response": []
+    },
+    {
+      "name": "nacosserver",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:18665/nacos/index"
+      },
+      "response": []
+    },
+    {
+      "name": "nacosserver change",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:18665/nacos/change?dataId=nacosserver&group=DEFAULT_GROUP&content=wdnmd=600000",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "18665",
+          "path": [
+            "nacos",
+            "change"
+          ],
+          "query": [
+            {
+              "key": "dataId",
+              "value": "nacosserver"
+            },
+            {
+              "key": "group",
+              "value": "DEFAULT_GROUP"
+            },
+            {
+              "key": "content",
+              "value": "wdnmd=600000"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "nacosconfigserver change",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:15666/nacos/change?dataId=nacosserver&group=DEFAULT_GROUP&content=wdnmd=600000",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "15666",
+          "path": [
+            "nacos",
+            "change"
+          ],
+          "query": [
+            {
+              "key": "dataId",
+              "value": "nacosserver"
+            },
+            {
+              "key": "group",
+              "value": "DEFAULT_GROUP"
+            },
+            {
+              "key": "content",
+              "value": "wdnmd=600000"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "nacosconfigserver index",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:15666/nacos/index"
+      },
+      "response": []
+    }
+  ]
+}
